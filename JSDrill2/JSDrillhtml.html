@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Pete's JS Drill</title>
+   <!--Jquery connection -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <!--link to my css doc-->
+   <link rel="stylesheet" type="text/css" href="JSDrillcss.css"/>
+   <!--CSS link needed for lightbox-->
+   <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen"/>
+   <!--[if lt IE 9]>
+   <script>
+    document.createElement("article");
+    document.createElement("aside");
+    document.createElement("footer");
+    document.createElement("header");
+    document.createElement("main");
+    document.createElement("nav");
+    document.createElement("section");
+   </script>
+   <![endif]-->
+ 
+</head>
+
+<body>
+   <header class="banner">
+     <h1>Welcome</h1>
+     <p><b>It's a simple site.</b></p>
+   </header>
+  
+<!--Drop down menu with JS functionality.--> 
+   <nav> 
+    <ul>
+      <li><a href="#">Menu</a>
+        <ul>
+          <li><a href="https://www.pexels.com/photo/meat-salad-close-up-view-hamburgers-29302/">Choice 1</a></li>
+          <li><a href="https://www.pexels.com/photo/desert-strawberries-glas-whipped-cream-8382/">Choice 2</a></li>
+          <li><a href="https://www.pexels.com/photo/food-healthy-man-person-5122/">Choice 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a>
+        <ul>
+          <li><a href="#">Me</a></li>
+          <li><a href="#">Yourself</a></li>
+          <li><a href="#">A Friend</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Home</a>
+        <ul>
+          <li><a href="#">Vacation</a></li>
+          <li><a href="#">Space</a></li>
+          <li><a href="#">Underground</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+ <main>
+  <section>
+     <h2>About my process</h2>
+     <article>
+      <header>
+      <p>Clays I'm currently using: Deschutes White, Mounthood Porcelain and Crystal Springs Porcelain.</p>
+      </header>
+      <p>My pots are fired to cone 10 (2360 degrees)</p>
+     </article>
+  </section>
+
+<!--Lightbox links and references here--> 
+  <div>
+  <h2>Examples of my work</h2>
+  <a class="example-image-link" href="tenmokumug.jpg" data-lightbox="example-set" data-title="A tenmoku mug."><img class="example-image" src="tenmokumugthumb.jpg" alt="tenmoku mug thumb"></a>
+  <a class="example-image-link" href="celedonmug.jpg" data-lightbox="example-set" data-title="A celedon mug."><img class="example-image" src="celedonmugthumb.jpg" alt="celedon mug thumnb"></a>
+  <a class="example-image-link" href="redmug.jpg" data-lightbox="example-set" data-title="A copper red mug."><img class="example-image" src="redmugthumb.jpg" alt="copper red mug thumb"></a>
+  </div>
+
+  <section>
+      <h2>Interested in purchasing a pot?</h2>
+      <li><a href="https://www.etsy.com/shop/NobleFoxPottery">Shop Link</a></li>
+  </section>
+  <br>
+  <footer>
+    <p>I hope you've enjoyed this webpage!</p>
+    <p>Feel free to kick back and enjoy some wonderful clouds.
+  </footer>
+    <br>
+     <iframe width="640" height="360" src="https://www.youtube.com/embed/0_jNjpVxUt0" frameborder="0" allowfullscreen></iframe>
+  <footer>
+    <p>I hope to see you back soon!</p>
+  </footer>
+</main>
+
+<!--Drop down menu fade in/out on hover script -->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('li').hover(function(){
+      $(this).find('ul>li').fadeToggle(400);
+    });
+  });
+  </script>
+
+<!--link to lightbox-->
+  <script type="text/javascript" src="lightbox.js"></script>
+
+</body>
+</html>
